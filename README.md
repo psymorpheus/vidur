@@ -53,8 +53,10 @@ To run the simulator, create a mamba environment with the given dependency file.
 
 ```sh
 mamba env create -p ./env -f ./environment.yml
-mamba env update -f environment-dev.yml
+mamba env update -p ./env -f environment-dev.yml
 ```
+
+(If you already have conda installed, then you can install mamba using `conda install -c conda-forge mamba`.)
 
 ### Using `venv`
 
